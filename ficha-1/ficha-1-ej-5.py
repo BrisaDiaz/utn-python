@@ -1,13 +1,14 @@
-# 5. Conversión de medidas
+'''
+ 5. Conversión de medidas
 
-#Desarrolle un programa para convertir una medida dada en pies a sus equivalentes en:
+ Desarrolle un programa para convertir una medida dada en pies a sus equivalentes en:
 
-# yardas
-# pulgadas
-# centímetros
-# metros
-# Sabiendo que: 1 pie = 12 pulgadas, 1 yarda = 3 pies,  1 pulgada = 2.54 centímetros, 1 metro = 100 centímetros.
-
+ yardas
+ pulgadas
+ centímetros
+ metros
+ Sabiendo que: 1 pie = 12 pulgadas, 1 yarda = 3 pies, 1 pulgada = 2.54 centímetros, 1 metro = 100 centímetros.
+'''
 pie= float(input("ingrese una medida expresada en pies: "))
 yardaXpies= 3
 yarda = pie / yardaXpies
