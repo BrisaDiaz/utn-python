@@ -6,15 +6,18 @@
  más un valor extra calculado en base a la cantidad de kilómetros a recorrer:
  Por cada kilómetro a recorrer se cobra $0.30 de adicional.
 '''
-#Ingreso de datos
-precioBase= float(input("Ingrese el precio base del boleto: "))
-km= float(input("Ingrese la distancia a recorrer expresada en kilómetros: "))
+
+#Título y carga de datos
+print("Precio del boleto\n")
+precio_base = input("Ingrese el precio base del boleto: "))
+km = input("Ingrese la distancia a recorrer expresada en kilómetros: "))
+
+#Declaración de constantes
+PRECIO_X_KM= 0.30
 
 #Procesos
-PRECIO_X_KM= 0.30
-respuesta= precioBase + km * PRECIO_X_KM
+respuesta= precio_base + km * PRECIO_X_KM
 
 #Resultado
-print("--------------------------")
-rta=f"El precio total del boleto de ómnibus para un recorrido de {km} kilómetros es de: ${respuesta}"
+rta=f"\nPrecio total del boleto: ${respuesta}"
 print(rta.format(km,respuesta))

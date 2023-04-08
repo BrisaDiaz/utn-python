@@ -7,14 +7,16 @@
  De nuevo, no es necesario convertir a horas, minutos y segundos:
  exprese en resultado como un número real, tal cual lo haya obtenido del cálculo.
 '''
-#Datos
+#Título
+print("Viaje Córdoba-Rosario\n")
+
+#Declaración de constantes
 DISTANCIA = 400
 VELOCIDAD = 122
 
 #Procesos
-horas=  DISTANCIA / VELOCIDAD
+horas =  DISTANCIA / VELOCIDAD
 
 #Resultado
-rta = f"El minimo de horas que demora un vehículo a {VELOCIDAD}m/s en llegar a Rosario desde Córdoba es: {horas}horas"
-print("--------------------------")
-print(rta.format(VELOCIDAD,horas))
+rta = f"\nEl minimo de horas que demorará el vehículo: {horas}"
+print(rta.format(VELOCIDAD, horas))

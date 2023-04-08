@@ -1,20 +1,19 @@
 '''
 2. Cuadrado de un binomio
-
- Un binomio al  cuadrado (suma) es igual al cuadrado del primer término,
- más el doble producto del primero por el segundo más el cuadrado del segundo.
-
- Plantear un script directamente en el shell de Python, que permita mostrar, para dos valores a y b,
- el valor del cuadrado del binomio.
+Un binomio al  cuadrado (suma) es igual al cuadrado del primer término,
+más el doble producto del primero por el segundo más el cuadrado del segundo.
+Plantear un script directamente en el shell de Python, que permita mostrar,
+para dos valores a y b,el valor del cuadrado del binomio.
 '''
-#Ingreso de datos
-a = float(input("ingresar la primer variable del binomio: "))
-b = float(input("ingresar el segundo variable del binomio: "))
+
+#Título y carga de datos
+print("Cuadrado de un binomio\n")
+a = float(input("ingresar el primer elemento del binomio: "))
+b = float(input("ingresar el segundo elemento del binomio: "))
 
 #Procesos
-resultado = round(a**2+2*a*b+b**2,1)
+resultado = a**2 + 2*a*b + b**2
 
 #Resultado
-print("--------------------------")
-rta =f"El resultado del binomio cuadrado perfecto de ({a} + {b}) es {resultado}"
-print(rta.format(a,b,resultado))
+rta = f"\nValor del cuadrado perfecto de ({a} + {b}): {resultado}"
+print(rta.format(a, b, resultado))
